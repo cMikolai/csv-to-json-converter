@@ -3,6 +3,7 @@ import React from 'react';
 import Header from './components/Header';
 import Input from './components/Input';
 import Output from './components/Output';
+import Footer from './components/Footer';
 
 class App extends React.Component {
   constructor(props) {
@@ -36,6 +37,7 @@ class App extends React.Component {
           <Output
             value={this.state.value} />
         </div>
+        <Footer />
       </div>
     );
   }
