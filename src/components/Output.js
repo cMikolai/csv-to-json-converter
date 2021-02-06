@@ -4,7 +4,7 @@ class Output extends React.Component {
 
   render() {
     return (
-      <div className="App-output">{this.props.value}</div>
+      <div className="App-output">{this.props.result}</div>
     );
   }
 }

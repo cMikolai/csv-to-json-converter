@@ -36,7 +36,7 @@ class App extends React.Component {
             handleSubmit={this.handleSubmit}
             value={this.state.value} />
           <Output
-            value={this.state.value} />
+            result={this.state.result} />
         </div>
         <Footer />
       </div>
