@@ -25,6 +25,10 @@
   padding: 15px;
 }
 
+.App-output {
+  margin-top: 33px;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -33,8 +37,9 @@ form {
 
 label {
   padding: 0 0 15px 0;
+  text-align: left;
 }
 
 input {
-  margin: 5px;
+  margin-top: 5px;
 }
