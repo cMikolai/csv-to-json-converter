@@ -20,10 +20,21 @@
 
 .App-input,
 .App-output {
-  width: 50%;
+  display: flex;
+  width: 100%;
   padding: 15px;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+label {
+  padding: 0 0 15px 0;
+}
+
 input {
-  margin: 0 5px;
+  margin: 5px;
 }
