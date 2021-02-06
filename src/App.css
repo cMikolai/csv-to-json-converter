@@ -28,6 +28,12 @@
 .App-output {
   margin-top: 33px;
   text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-output button {
+  margin-top: 15px;
 }
 
 form {

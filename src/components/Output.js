@@ -4,7 +4,12 @@ class Output extends React.Component {
 
   render() {
     return (
-      <div className="App-output">{this.props.result}</div>
+      <div className="App-output">
+        {this.props.result}
+        <button onClick={this.props.handleFormatJson}>
+          Format
+        </button>
+      </div>
     );
   }
 }
