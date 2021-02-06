@@ -9,7 +9,8 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: ''
+      value: "name,value,order\ncake,brownies,1\ncake,cookies,2\ncake,small cake,3\ncake,big cake,4\ncake,best brownies ever,5\ndrink,juice,1\ndrink,water,2\ndrink smart,daily,1\ndrink smart,weekly,2\n",
+      result: ""
     };
 
     this.handleChange = this.handleChange.bind(this);
