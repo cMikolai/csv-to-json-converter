@@ -43,8 +43,11 @@ class App extends React.Component {
   }
 
   handleSubmit(event) {
-    alert('An essay was submitted: ' + this.state.value);
     event.preventDefault();
+
+    this.setState({
+      result: this.csvToJSON(this.state.value),
+    });
   }
 
   render() {
