@@ -21,6 +21,27 @@ class App extends React.Component {
     this.setState({value: event.target.value});
   }
 
+  // snippet adjusted from here: http://techslides.com/convert-csv-to-json-in-javascript
+  csvToJSON(csv) {
+
+    var lines = csv.split("\n");
+    var result = [];
+    var headers=lines[0].split(",");
+
+    for (var i=1; i < lines.length; i++) {
+      var obj = {};
+      var currentline=lines[i].split(",");
+
+      for (var j=0; j < headers.length; j++) {
+        obj[headers[j]] = currentline[j];
+      }
+
+      result.push(obj);
+    }
+
+    return JSON.stringify(result);
+  }
+
   handleSubmit(event) {
     alert('An essay was submitted: ' + this.state.value);
     event.preventDefault();
