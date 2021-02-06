@@ -47,8 +47,6 @@ class App extends React.Component {
   // format JSON to combine columns with same name
   // Source: https://stackoverflow.com/a/46217315/10194611
   formatJSON(json) {
-    console.log(json)
-
     var data = json,
         hash = Object.create(null),
         formattedResult = data.reduce(function (r, a) {
@@ -61,10 +59,7 @@ class App extends React.Component {
             return r;
         }, []);
 
-    console.log(formattedResult)
-
     return JSON.stringify(formattedResult);
-
   }
 
   handleSubmit(event) {
