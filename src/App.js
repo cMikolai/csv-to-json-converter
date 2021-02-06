@@ -56,6 +56,7 @@ class App extends React.Component {
             handleChange={this.handleChange}
             handleSubmit={this.handleSubmit}
             value={this.state.value} />
+          {/* TODO: format JSON to look prettier */}
           <Output
             result={this.state.result} />
         </div>
