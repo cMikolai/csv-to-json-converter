@@ -7,7 +7,7 @@ class Input extends React.Component {
     return (
       <div className="App-input">
         <form onSubmit={this.props.handleSubmit}>
-          <label for="csv-input">Paste CSV below:</label>
+          <label htmlFor="csv-input">Paste CSV below:</label>
           <textarea
             name="csv-input"
             type="text"
